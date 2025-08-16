@@ -11,7 +11,7 @@
 
 After experimentation, I found that the model with highest accuracy comes from:
 
-- **Unfreezing the last two layers** of the base BERT model
+- Keep all layers of the base BERT model **frozen** except for the last two. (Helps reduce overfit)
 - Adding **two custom fully-connected layers** on top
 - Keep batch size = 32
 - After 6-7 epoches, it overfits
