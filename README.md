@@ -14,7 +14,7 @@ After experimentation, I found that the model with highest accuracy comes from:
 - Keep all layers of the base BERT model **frozen** except for the last two. (Helps reduce overfit)
 - Adding **two custom fully-connected layers** on top
 - Keep batch size = 32
-- After 6-7 epoches, it overfits
+- Train no more than 6 epoches. after that, it overfits
 
 This approach balances fine-tuning power with generalization, avoiding overfitting while still adapting the model to the fake news detection task.
 
