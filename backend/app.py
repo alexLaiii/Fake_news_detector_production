@@ -21,12 +21,12 @@ class StatementInput(BaseModel):
 
 @app.get("/")
 def root():
-    return {"ok": True, "message": "Fake News Detector API", "routes": ["/health", "/analyze"]}
+    return {"ok": True, "message": "Fake News Detector API", "routes": ["/state", "/analyze"]}
 
-@app.get("/health")
-def health():
-    return {"status": "healthy"}
+@app.get("/state")
+def state():
+    return {"status": "running"}
 
 @app.post("/analyze")
 def analyze(inp: StatementInput):
-    return predict_fake_news(inp.statement, save_plot_path="dummy")
+    return predict_fake_news(inp.statement)
