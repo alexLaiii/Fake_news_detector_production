@@ -1,0 +1,33 @@
+# --- Frontend (Next.js)
+node_modules/
+.next/
+out/
+.vercel/
+.turbo/
+npm-debug.log*
+yarn-error.log*
+
+# --- Backend (Python / FastAPI)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.coverage
+dist/
+build/
+
+# --- Env / secrets (both)
+.env
+.env.*
+!.env.example
+
+# --- IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
