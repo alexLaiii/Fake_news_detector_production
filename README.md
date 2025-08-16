@@ -1,12 +1,21 @@
 # Fake News Detector
-
-**Demo:** [fake-news-detector-production.vercel.app](https://fake-news-detector-production.vercel.app/)  
+**A full-stack application for detecting fake news using a fine-tuned BERT model with SHAP visualizations.** <br>
+**Demo:** [fake-news-detector-production.vercel.app](https://fake-news-detector-production.vercel.app/) <br>
+  - Training Detail with Dataset used in this model available in (https://fake-news-detector-production.vercel.app/about) <br>
+  
 **API:** [alexlai7777-fake-news-backend.hf.space](https://alexlai7777-fake-news-backend.hf.space)
 
-A full-stack application for detecting fake news using a fine-tuned BERT model with SHAP visualizations.
+---
+## Notes & Thoughts
+
+After experimentation, I found that the most consistent results come from:
+
+- **Unfreezing the last two layers** of the base BERT model
+- Adding **two custom fully-connected layers** on top
+
+This approach balances fine-tuning power with generalization, avoiding overfitting while still adapting the model to the fake news detection task.
 
 ---
-
 ## Project Structure
 fake_news_detector/ <br>
 ├── frontend/ # Next.js + Tailwind frontend UI <br>
