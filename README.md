@@ -11,6 +11,7 @@ A full-stack application for detecting fake news using a fine-tuned BERT model w
 fake_news_detector/ <br>
 ├── frontend/ # Next.js + Tailwind frontend UI <br>
 ├── backend/ # Python backend with BERT model + SHAP
+├── notebook/ # Code from Jupyter Notebook on How I fine-tune my model
 
 ---
 
