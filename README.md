@@ -9,7 +9,7 @@
 ---
 ## Notes & Thoughts
 
-After experimentation, I found that the most consistent results come from:
+After experimentation, I found that the model with highest accuracy comes from:
 
 - **Unfreezing the last two layers** of the base BERT model
 - Adding **two custom fully-connected layers** on top
