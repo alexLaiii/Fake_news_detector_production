@@ -1,9 +1,9 @@
-# Fake News Detector
+# Fake News Detector powered by AI
 **A full-stack application for detecting fake news using a fine-tuned BERT model with SHAP visualizations.** <br>
 **Demo:** [fake-news-detector-production.vercel.app](https://fake-news-detector-production.vercel.app/) <br>
   - Training Detail with Dataset used in this model available in (https://fake-news-detector-production.vercel.app/about) <br>
   
-**API:** [alexlai7777-fake-news-backend.hf.space](https://alexlai7777-fake-news-backend.hf.space)
+**Model API:** [alexlai7777-fake-news-backend.hf.space](https://alexlai7777-fake-news-backend.hf.space)
 
 ---
 ## Notes & Thoughts
