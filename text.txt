@@ -1,0 +1,4 @@
+Note:
+
+Api deployed to Hugging face space (running)
+Model.pt stored in Hugging face hub
