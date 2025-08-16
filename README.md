@@ -9,8 +9,8 @@
 ---
 ## Notes & Thoughts
 
-After experimentation, I found that the model with highest accuracy comes from (Assume dataset size around **50000**):
-
+After experimentation, I found that the model with highest accuracy comes from: <br>
+(Assuming dataset size around **50000**)
 - Keep all layers of the base BERT model **frozen** except for the last two. (Helps reduce overfit)
 - Adding **two custom fully-connected layers** on top
 - Keep batch size = 32
